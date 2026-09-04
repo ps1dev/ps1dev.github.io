@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ps1dev tools</title>
+<style>
+  :root { color-scheme: dark; }
+  body { background:#15171a; color:#d6d9dd; margin:0;
+         font:15px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  main { max-width:38rem; margin:0 auto; padding:4rem 1.5rem; }
+  h1 { font-size:1.6rem; margin:0 0 .25rem; color:#fff; letter-spacing:.02em; }
+  p.sub { margin:0 0 2.5rem; color:#8b9299; }
+  ul { list-style:none; padding:0; margin:0; }
+  li { margin:0 0 1.6rem; }
+  a { color:#7fb2e5; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .name { font-size:1.05rem; }
+  .desc { color:#8b9299; }
+  footer { margin-top:3.5rem; color:#6b7279; font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ps1dev tools</h1>
+  <p class="sub">Browser tools for PlayStation 1 development. No install, nothing uploaded anywhere.</p>
+  <ul>
+    <li>
+      <a class="name" href="/timweb/">timweb</a><br>
+      <span class="desc">TIM converter and VRAM layout editor. Import images or existing TIMs,
+      convert to 4/8/16bpp, lay them out in VRAM, export TIM, raw, or split pixel/CLUT.</span>
+    </li>
+    <li>
+      <a class="name" href="/loopy/">loopy</a><br>
+      <span class="desc">Audio loop point editor. Set and audition WAV loop points and write them
+      into a smpl chunk, with alignment for the SPU's ADPCM blocks.</span>
+    </li>
+  </ul>
+  <footer>
+    Source: <a href="https://github.com/ps1dev">github.com/ps1dev</a>.
+    Format specs live in <a href="https://github.com/ps1dev/standards">standards</a>.
+  </footer>
+</main>
+</body>
+</html>
