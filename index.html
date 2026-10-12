@@ -16,6 +16,7 @@
   a { color:#7fb2e5; text-decoration:none; }
   a:hover { text-decoration:underline; }
   .name { font-size:1.05rem; }
+  .dl { color:#6b7279; font-size:.85rem; margin-left:.75rem; }
   .desc { color:#8b9299; }
   footer { margin-top:3.5rem; color:#6b7279; font-size:.9rem; }
 </style>
@@ -23,22 +24,32 @@
 <body>
 <main>
   <h1>ps1dev tools</h1>
-  <p class="sub">Browser tools for PlayStation 1 development. No install, nothing uploaded anywhere.</p>
+  <p class="sub">Browser tools for PlayStation 1 development. No install, nothing uploaded anywhere.
+  Each one is a single self-contained page, so the download link keeps a copy that works offline.</p>
   <ul>
     <li>
-      <a class="name" href="/timweb/">timweb</a><br>
+      <a class="name" href="/timweb/">timweb</a>
+      <a class="dl" href="/timweb/index.html" download="timweb.html">download</a><br>
       <span class="desc">TIM converter and VRAM layout editor. Import images or existing TIMs,
       convert to 4/8/16bpp, lay them out in VRAM, export TIM, raw, or split pixel/CLUT.</span>
     </li>
     <li>
-      <a class="name" href="/loopy/">loopy</a><br>
+      <a class="name" href="/loopy/">loopy</a>
+      <a class="dl" href="/loopy/index.html" download="loopy.html">download</a><br>
       <span class="desc">Audio loop point editor. Set and audition WAV loop points and write them
       into a smpl chunk, with alignment for the SPU's ADPCM blocks.</span>
     </li>
     <li>
-      <a class="name" href="/clutter/">clutter</a><br>
+      <a class="name" href="/clutter/">clutter</a>
+      <a class="dl" href="/clutter/index.html" download="clutter.html">download</a><br>
       <span class="desc">Palette animation editor. Build a sequence of palettes for an indexed
       image and play it back, with colour cycling and HSB ramps. Export raw, CLT, or multi-CLUT TIM.</span>
+    </li>
+    <li>
+      <a class="name" href="/shell-patcher/">shell-patcher</a>
+      <a class="dl" href="/shell-patcher/index.html" download="shell-patcher.html">download</a><br>
+      <span class="desc">BIOS shell replacer. Swap the shell binary in a BIOS ROM for an arbitrary
+      PS-EXE, with optional main RAM and VRAM size overrides applied before it runs.</span>
     </li>
   </ul>
   <footer>
